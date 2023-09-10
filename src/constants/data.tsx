@@ -13,13 +13,12 @@ export const skillsData = [
     title: "TypeScript",
   },
   {
-    img: "https://img.icons8.com/?size=512&id=ZoxjA0jZDdFZ&format=png",
-    title: "Kotlin",
-  },
-
-  {
     img: "https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png",
     title: "Django",
+  },
+  {
+    img: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
+    title: "FastAPI",
   },
   {
     img: "https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png",
@@ -47,6 +46,10 @@ export const skillsData = [
     img: "https://img.icons8.com/?size=512&id=cdYUlRaag9G9&format=png",
     title: "Docker",
   },
+  {
+    img: "https://foghornconsulting.com/wp-content/uploads/2022/01/kubernetes-1.png",
+    title: "Kubernetes",
+  },
 
   {
     img: "https://img.icons8.com/?size=512&id=t2x6DtCn5Zzx&format=png",
@@ -56,14 +59,6 @@ export const skillsData = [
   {
     img: "https://img.icons8.com/?size=512&id=33039&format=png",
     title: "AWS",
-  },
-  {
-    img: "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
-    title: "Android Studio",
-  },
-  {
-    img: "https://img.icons8.com/?size=512&id=t4YbEbA834uH&format=png",
-    title: "React Native",
   },
 ];
 
