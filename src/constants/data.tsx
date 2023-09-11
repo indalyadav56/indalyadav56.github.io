@@ -69,7 +69,6 @@ export const projectsData = [
     description: "meetsapce api develop using Python Django",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/Screenshot.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_backend",
-    demo: "https://api-meetspace.indalyadav.com",
   },
   {
     id: 2,
@@ -77,7 +76,6 @@ export const projectsData = [
     description: "meetsapce api develop using JavaScript ReactJS",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/web.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_web",
-    demo: "https://web-meetspace.indalyadav.com",
   },
   // {
   //   id: 3,

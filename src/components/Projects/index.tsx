@@ -29,14 +29,6 @@ const Projects = () => {
             <div className="my-4 flex gap-4">
               <a
                 className="p-4 bg-amber-900 radius rounded-lg"
-                href={item.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-              <a
-                className="p-4 bg-amber-900 radius rounded-lg"
                 href={item.sourceCode}
                 target="_blank"
                 rel="noopener noreferrer"
