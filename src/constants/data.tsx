@@ -114,4 +114,12 @@ export const projectsData = [
       "https://github.com/indalkumaryadav/DjangoReactProjects/tree/main/SocialMedia%20Project",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
   },
+  {
+    id: 4,
+    title: "Portfolio",
+    description: "portfolio project",
+    img: "../../screenshots/portfolio.png",
+    sourceCode: "https://github.com/indalyadav56/indalyadav56.github.io",
+    tags: ["TypeScript", "Next.js", "React", "Tailwind", "CI & CD"],
+  },
 ];

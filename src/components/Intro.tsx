@@ -11,7 +11,7 @@ import { Card, CardContent } from "./ui/card";
 
 export default function Intro() {
   return (
-    <section id="home" className="mt-14 h-screen flex justify-between">
+    <section id="home" className="mt-14 md:h-screen md:flex md:justify-between">
       <div className="flex-1 flex flex-col justify-evenly">
         <div className="flex flex-col gap-y-4">
           <p className="text-6xl font-semibold">
@@ -19,7 +19,7 @@ export default function Intro() {
             <span className="text-red-200">.</span>
           </p>
           <motion.div
-            className="sm:text-4xl"
+            className="sm:text-2xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -63,7 +63,7 @@ export default function Intro() {
         </motion.div>
       </div>
       <Lottie
-        className="flex-1"
+        className="md:flex-1"
         animationData={animationData}
         height="100%"
         width="100%"

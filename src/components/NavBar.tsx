@@ -29,7 +29,7 @@ export default function Header() {
         <p className="text-2xl font-semibold">{"<Indal/>"}</p>
         👋
       </div>
-      <nav className="">
+      <nav className="hidden md:flex">
         <ul className="flex flex-wrap  text-[0.9rem] font-medium ">
           {links.map((link) => (
             <motion.li

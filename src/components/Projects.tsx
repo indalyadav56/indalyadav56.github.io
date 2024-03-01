@@ -2,7 +2,13 @@
 
 import React from "react";
 import { projectsData } from "../constants/data";
-import { Card, CardContent, CardFooter } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+} from "./ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -13,9 +19,9 @@ const Projects = () => {
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold text-center my-4">
         Projects
       </h1>
-      <div className="flex flex-wrap justify-evenly">
+      <div className="flex flex-wrap justify-evenly gap-y-4">
         {projectsData?.map((item, index) => (
-          <Card key={item.id} className="max-w-sm hover:translate-y-6">
+          <Card key={item.id} className="max-w-md hover:ring-2">
             <CardContent className="p-0">
               <img
                 src={item.img}
@@ -23,22 +29,27 @@ const Projects = () => {
                 width={"100%"}
                 height={220}
               />
-              <CardFooter className="flex flex-col mt-4 justify-center">
-                <p>{item.description}</p>
+              <CardHeader>{item.title}</CardHeader>
+              <CardDescription className="p-8">
+                {item.description}
+              </CardDescription>
+              <CardFooter>
                 <div className="flex flex-wrap">
                   {item.tags.map((tag) => (
                     <Button
                       key={tag}
                       variant="outline"
                       size="sm"
-                      className="m-2"
+                      className="m-1"
                     >
                       {tag}
                     </Button>
                   ))}
                 </div>
-                <Link href={item.sourceCode} target="_blank">
-                  <Button className="w-32 h-12">GitHub</Button>
+              </CardFooter>
+              <CardFooter className="flex flex-col justify-center">
+                <Link href={item.sourceCode} target="_blank" className="w-full">
+                  <Button className="w-full">GitHub</Button>
                 </Link>
               </CardFooter>
             </CardContent>
