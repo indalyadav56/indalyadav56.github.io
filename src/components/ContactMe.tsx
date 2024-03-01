@@ -6,34 +6,51 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: any) => {
+    console.log("indal");
     e.preventDefault();
-    // Handle form submission logic here
-    // You can send the form data to an API or perform other actions
     console.log("Form submitted:", { name, email, message });
-    // Reset form fields
     setName("");
     setEmail("");
     setMessage("");
+    // Define the request payload
+    const payload = {
+      from: email,
+      to: "indalkumar56@gmail.com",
+      subject: "Hello World",
+      html: message,
+    };
+
+    // Define the Fetch API call
+    fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => {
+        // Check if the response is successful
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        // Parse the JSON response
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
-    <div className="Contact my-4" id="Contact">
+    <div id="contact" onSubmit={handleSubmit}>
       <form className="max-w-md mx-auto p-4 ">
-        <h1 className="lg:text-5xl md:text-4xl text-3xl text-center">
+        <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold text-center">
           Contact ME
         </h1>
-        <div className="mb-4">
-          <label htmlFor="name" className="block font-medium mb-1">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="w-full p-2 border border-gray-300 rounded"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
         <div className="mb-4">
           <label htmlFor="email" className="block font-medium mb-1">
             Email
@@ -60,8 +77,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded"
-          onClick={handleSubmit}
+          className="bg-blue-500 text-white py-2 px-4 rounded w-full h-12"
         >
           Submit
         </button>

@@ -1,7 +1,38 @@
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
+
 export const skillsData = [
   {
     img: "https://img.icons8.com/?size=512&id=13441&format=png",
     title: "Python",
+  },
+  {
+    img: "./golang.svg",
+    title: "Golang",
   },
 
   {
@@ -17,20 +48,15 @@ export const skillsData = [
     title: "Django",
   },
   {
-    img: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
+    img: "./fastapi.svg",
     title: "FastAPI",
   },
-  {
-    img: "https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png",
-    title: "NodeJS",
-  },
-
   {
     img: "https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png",
     title: "ReactJS",
   },
   {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdWXraAh9saR60a5m4R0c9EKljRb4NKmUksS1MOg&s",
+    img: "./nextjs.png",
     title: "NextJS",
   },
 
@@ -67,39 +93,25 @@ export const projectsData = [
     id: 1,
     title: "MeetSpace API",
     description: "meetsapce api develop using Python Django",
-    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/Screenshot.png",
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_backend",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
   },
   {
     id: 2,
     title: "MeetSpace Web",
     description: "meetsapce api develop using JavaScript ReactJS",
-    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/web.png",
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_web",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
   },
-  // {
-  //   id: 3,
-  //   title: "MeetSpace App",
-  //   description: "meetsapce api development using Python Django",
-  //   img: "https://raw.githubusercontent.com/indalyadav56/Django-React-Projects/main/SocialMedia%20Project/profile_social.png?token=GHSAT0AAAAAACDPBZS736WUSPGIOQOR4WMMZHBRL6Q",
-  //   sourceCode:
-  //     "https://github.com/indalkumaryadav/DjangoReactProjects/tree/main/SocialMedia%20Project",
-  //   demo: "https://socialnet.indalyadav.com",
-  // },
-  // {
-  //   id: 2,
-  //   title: "SocialNet API",
-  //   description: "",
-  //   img: "https://social-net.s3.amazonaws.com/image1.png",
-  //   sourceCode: "https://github.com/indalyadav56/social_net_backend.git",
-  //   demo: "https://api.socialnet.indalyadav.com",
-  // },
-  // {
-  //   id: 3,
-  //   title: "EasyBuy API",
-  //   description: "EasyBuy API",
-  //   img: "https://easybuy-cdn.s3.amazonaws.com/Screenshot+from+2023-06-25+08-07-40.png",
-  //   sourceCode: "https://github.com/indalyadav56/social_net_backend.git",
-  //   demo: "https://api.easybuy.indalyadav.com",
-  // },
+  {
+    id: 3,
+    title: "MeetSpace Admin",
+    description: "meetsapce api development using Python Django",
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
+    sourceCode:
+      "https://github.com/indalkumaryadav/DjangoReactProjects/tree/main/SocialMedia%20Project",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+  },
 ];
