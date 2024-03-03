@@ -48,6 +48,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@types/typed.js": "^2.0.9"
+    "@types/typed.js": "^2.0.9",
+    "@types/uuid": "^9.0.8"
   }
 }
