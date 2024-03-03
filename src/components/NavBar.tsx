@@ -27,7 +27,6 @@ export default function Header() {
     >
       <div className="flex gap-x-2">
         <p className="text-2xl font-semibold">{"<Indal/>"}</p>
-        👋
       </div>
       <nav className="hidden md:flex">
         <ul className="flex flex-wrap  text-[0.9rem] font-medium ">

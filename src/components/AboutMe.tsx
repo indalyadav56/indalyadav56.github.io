@@ -2,9 +2,6 @@ import React from "react";
 import { Card } from "./ui/card";
 
 const AboutMe = () => {
-  const data = ` 
-
-  `;
   return (
     <div id="about" className="lg:flex mx-auto">
       <div>

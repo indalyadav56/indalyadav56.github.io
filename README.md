@@ -2,6 +2,10 @@
 
 This is my portfolio website, showcasing my projects, skills, and experience. It is built using TypeScript, Next.js, Tailwind CSS, and utilizes CI/CD pipelines for continuous integration and deployment.
 
+# Screenshots
+
+![Home Page](screenshots/portfolio.png)
+
 ## Technologies Used
 
 - TypeScript: A statically typed superset of JavaScript that adds optional static typing.

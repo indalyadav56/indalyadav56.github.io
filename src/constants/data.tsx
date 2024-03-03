@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const links = [
   {
     name: "Home",
@@ -90,36 +92,65 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    id: 1,
+    id: uuidv4(),
+    title: "MeetSpace Web",
+    description: "meetsapce api develop using JavaScript ReactJS",
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/meetspace.png",
+    sourceCode: "https://github.com/indalyadav56/meetspace_web",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "Zustand",
+      "ReactJS",
+      "Tailwind",
+      "Shadcn",
+      "Docker",
+      "Nginx",
+    ],
+  },
+  {
+    id: uuidv4(),
     title: "MeetSpace API",
     description: "meetsapce api develop using Python Django",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_backend",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: [
+      "Golang",
+      "Gin",
+      "GORM",
+      "WebSocket",
+      "PostgreSQL",
+      "Redis",
+      "DDD Design Architechture",
+      "Docker",
+      "Docker Compose",
+      "Nginx",
+      "CI & CD",
+    ],
   },
   {
-    id: 2,
-    title: "MeetSpace Web",
-    description: "meetsapce api develop using JavaScript ReactJS",
-    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
-    sourceCode: "https://github.com/indalyadav56/meetspace_web",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  },
-  {
-    id: 3,
+    id: uuidv4(),
     title: "MeetSpace Admin",
     description: "meetsapce api development using Python Django",
-    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
-    sourceCode:
-      "https://github.com/indalkumaryadav/DjangoReactProjects/tree/main/SocialMedia%20Project",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_admin/main/screenshots/dashboard.png",
+    sourceCode: "https://github.com/indalyadav56/meetspace_admin",
+    tags: ["Golang", "TypeScript", "ReactJS", "Material UI", "Docker"],
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Portfolio",
     description: "portfolio project",
-    img: "../../screenshots/portfolio.png",
+    img: "https://raw.githubusercontent.com/indalyadav56/indalyadav56.github.io/main/screenshots/portfolio.png",
     sourceCode: "https://github.com/indalyadav56/indalyadav56.github.io",
     tags: ["TypeScript", "Next.js", "React", "Tailwind", "CI & CD"],
+  },
+  {
+    id: uuidv4(),
+    title: "Social Media Project",
+    description: "social media project",
+    img: "https://raw.githubusercontent.com/indalyadav56/Django-React-Projects/main/SocialMedia%20Project/social.png",
+    sourceCode:
+      "https://github.com/indalyadav56/Django-React-Projects/tree/main/SocialMedia%20Project",
+    tags: ["Python", "Django", "ReactJS", "Redux", "styled-components"],
   },
 ];

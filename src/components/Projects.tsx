@@ -23,12 +23,7 @@ const Projects = () => {
         {projectsData?.map((item, index) => (
           <Card key={item.id} className="max-w-md hover:ring-2">
             <CardContent className="p-0">
-              <img
-                src={item.img}
-                className="p-0 rounded-tr-md rounded-tl-md"
-                width={"100%"}
-                height={220}
-              />
+              <img src={item.img} className="p-0 rounded-tr-md rounded-tl-md" />
               <CardHeader>{item.title}</CardHeader>
               <CardDescription className="p-8">
                 {item.description}
