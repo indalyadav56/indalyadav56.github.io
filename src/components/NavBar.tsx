@@ -54,7 +54,7 @@ export default function NavBar() {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      <div className="glass-navbar border-b border-border/40 backdrop-blur-md">
+      <div className="glass-effect border-b border-primary/10 shadow-sm">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link 
             href="/" 
@@ -71,12 +71,12 @@ export default function NavBar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"}`}
+                  className={`relative px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive ? "text-primary font-semibold" : "text-muted-foreground hover:text-foreground hover:bg-secondary/30"}`}
                 >
                   {link.label}
                   {isActive && (
                     <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-purple-600 mx-3 rounded-full"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary mx-3 rounded-full"
                       layoutId="navbar-indicator"
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
@@ -84,9 +84,6 @@ export default function NavBar() {
                 </Link>
               );
             })}
-            <div className="ml-2">
-              <ModeToggle />
-            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -113,7 +110,7 @@ export default function NavBar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden glass-navbar border-b border-border/40 backdrop-blur-md"
+            className="md:hidden glass-effect border-b border-primary/10 shadow-sm"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
               {navLinks.map((link, index) => {

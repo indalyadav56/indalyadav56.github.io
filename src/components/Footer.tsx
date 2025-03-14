@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-12 px-4 border-t border-border/10 bg-gradient-to-b from-transparent to-background/80 backdrop-blur-sm">
+    <footer className="py-12 px-4 border-t border-border">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-4 space-y-4">
@@ -36,7 +36,7 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="flex items-center space-x-2"
             >
-              <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+              <span className="font-bold text-xl text-primary">
                 Indal Yadav
               </span>
             </motion.div>
@@ -89,7 +89,7 @@ export default function Footer() {
                     href={link.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-card/50 backdrop-blur-sm hover:bg-primary/10 text-primary border border-border/40 hover:border-primary/30 transition-colors flex items-center justify-center"
+                    className="p-2 rounded-full bg-background border border-border hover:border-primary hover:text-primary transition-colors flex items-center justify-center"
                     aria-label={link.label}
                   >
                     {link.icon}
@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
         
         <motion.div 
-          className="mt-8 pt-8 border-t border-border/10 text-center text-muted-foreground text-xs"
+          className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-xs"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

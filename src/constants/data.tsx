@@ -101,24 +101,7 @@ export interface ProjectData {
 }
 
 export const projectsData: ProjectData[] = [
-  {
-    id: uuidv4(),
-    title: "MeetSpace Web",
-    description: "A modern video conferencing platform with real-time communication features",
-    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/meetspace.png",
-    sourceCode: "https://github.com/indalyadav56/meetspace_web",
-    liveDemo: "https://meetspace.indalyadav.com",
-    tags: [
-      "TypeScript",
-      "Next.js",
-      "Zustand",
-      "ReactJS",
-      "Tailwind",
-      "Shadcn",
-      "Docker",
-      "Nginx",
-    ],
-  },
+  
   {
     id: uuidv4(),
     title: "MeetSpace API",
@@ -137,6 +120,24 @@ export const projectsData: ProjectData[] = [
       "Docker Compose",
       "Nginx",
       "CI & CD",
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: "MeetSpace Web",
+    description: "A modern video conferencing platform with real-time communication features",
+    img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/meetspace.png",
+    sourceCode: "https://github.com/indalyadav56/meetspace_web",
+    liveDemo: "https://meetspace.indalyadav.com",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "Zustand",
+      "ReactJS",
+      "Tailwind",
+      "Shadcn",
+      "Docker",
+      "Nginx",
     ],
   },
   {
