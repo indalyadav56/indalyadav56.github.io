@@ -90,13 +90,24 @@ export const skillsData = [
   },
 ];
 
-export const projectsData = [
+export interface ProjectData {
+  id: string;
+  title: string;
+  description: string;
+  img: string;
+  sourceCode: string;
+  liveDemo?: string;
+  tags: string[];
+}
+
+export const projectsData: ProjectData[] = [
   {
     id: uuidv4(),
     title: "MeetSpace Web",
-    description: "meetsapce api develop using JavaScript ReactJS",
+    description: "A modern video conferencing platform with real-time communication features",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_web/main/screenshots/meetspace.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_web",
+    liveDemo: "https://meetspace.indalyadav.com",
     tags: [
       "TypeScript",
       "Next.js",
@@ -111,7 +122,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "MeetSpace API",
-    description: "meetsapce api develop using Python Django",
+    description: "Backend API for the MeetSpace platform with WebSocket support for real-time features",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_backend/main/screenshots/swagger.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_backend",
     tags: [
@@ -131,23 +142,25 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "MeetSpace Admin",
-    description: "meetsapce api development using Python Django",
+    description: "Administrative dashboard for managing MeetSpace platform users and resources",
     img: "https://raw.githubusercontent.com/indalyadav56/meetspace_admin/main/screenshots/dashboard.png",
     sourceCode: "https://github.com/indalyadav56/meetspace_admin",
+    liveDemo: "https://admin.meetspace.indalyadav.com",
     tags: ["Golang", "TypeScript", "ReactJS", "Material UI", "Docker"],
   },
   {
     id: uuidv4(),
     title: "Portfolio",
-    description: "portfolio project",
+    description: "My personal portfolio website showcasing my projects and skills",
     img: "https://raw.githubusercontent.com/indalyadav56/indalyadav56.github.io/main/screenshots/portfolio.png",
     sourceCode: "https://github.com/indalyadav56/indalyadav56.github.io",
+    liveDemo: "https://indalyadav.com",
     tags: ["TypeScript", "Next.js", "React", "Tailwind", "CI & CD"],
   },
   {
     id: uuidv4(),
     title: "Social Media Project",
-    description: "social media project",
+    description: "A full-featured social media platform with user profiles, posts, and interactions",
     img: "https://raw.githubusercontent.com/indalyadav56/Django-React-Projects/main/SocialMedia%20Project/social.png",
     sourceCode:
       "https://github.com/indalyadav56/Django-React-Projects/tree/main/SocialMedia%20Project",
