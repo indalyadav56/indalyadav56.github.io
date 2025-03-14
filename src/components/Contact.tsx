@@ -272,7 +272,7 @@ export default function Contact() {
               
               {submitSuccess && (
                 <div className="mt-4 p-3 bg-green-500/10 border border-green-500/30 rounded-lg text-green-600">
-                  Your message has been sent successfully! I'll get back to you soon.
+                  Your message has been sent successfully! I&#39;ll get back to you soon.
                 </div>
               )}
               

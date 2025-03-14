@@ -112,7 +112,7 @@ export default function Skills() {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            A comprehensive set of technical skills I've acquired over 5+ years in the industry
+            A comprehensive set of technical skills I&#39;ve acquired over 5+ years in the industry
           </p>
         </motion.div>
 
@@ -120,7 +120,7 @@ export default function Skills() {
           <SkillCategory title="Frontend Development" skills={frontendSkills} delay={0.1} />
           <SkillCategory title="Backend Development" skills={backendSkills} delay={0.2} />
           <SkillCategory title="Database Technologies" skills={databaseSkills} delay={0.3} />
-          <SkillCategory title="DevOps & Cloud" skills={devOpsSkills} delay={0.4} />
+          <SkillCategory title="DevOps &amp; Cloud" skills={devOpsSkills} delay={0.4} />
         </div>
       </div>
     </section>

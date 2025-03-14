@@ -81,11 +81,11 @@ export default function About() {
             </h3>
             
             <p className="text-muted-foreground">
-              I'm Indal Kumar, a passionate software engineer with over 5 years of professional experience in building scalable web applications and services. I specialize in modern JavaScript frameworks, Python, and cloud technologies.
+              I&apos;m Indal Kumar, a passionate software engineer with over 5 years of professional experience in building scalable web applications and services. I specialize in modern JavaScript frameworks, Python, and cloud technologies.
             </p>
             
             <p className="text-muted-foreground">
-              Throughout my career, I've worked on diverse projects ranging from e-commerce platforms to enterprise solutions, focusing on delivering high-quality code that solves real-world problems. I'm dedicated to continuous learning and staying updated with the latest industry trends.
+              Throughout my career, I&apos;ve worked on diverse projects ranging from e-commerce platforms to enterprise solutions, focusing on delivering high-quality code that solves real-world problems. I&apos;m dedicated to continuous learning and staying updated with the latest industry trends.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-6">

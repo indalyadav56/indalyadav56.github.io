@@ -67,7 +67,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <span className="font-montserrat font-extrabold">Hi, I'm </span>
+              <span className="font-montserrat font-extrabold">Hi, I&apos;m </span>
               <span className="text-gradient-primary">Indal Kumar</span>
             </motion.h1>
             
@@ -77,7 +77,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              I'm a <span ref={typedElementRef} className="text-primary font-semibold"></span>
+              I&apos;m a <span ref={typedElementRef} className="text-primary font-semibold"></span>
             </motion.h2>
             
             <motion.p
@@ -187,15 +187,15 @@ export default function Hero() {
                 </div>
                 <div className="flex">
                   <span className="text-muted-foreground mr-4">4</span>
-                  <span className="ml-12"><span className="text-red-400">name</span><span className="text-white">=</span><span className="text-green-400">"Indal Kumar"</span></span>
+                  <span className="ml-12"><span className="text-red-400">name</span><span className="text-white">=</span><span className="text-green-400">&quot;Indal Kumar&quot;</span></span>
                 </div>
                 <div className="flex">
                   <span className="text-muted-foreground mr-4">5</span>
-                  <span className="ml-12"><span className="text-red-400">skills</span><span className="text-white">=</span><span className="text-orange-400">{'['}</span><span className="text-green-400">"React"</span><span className="text-white">,</span> <span className="text-green-400">"TypeScript"</span><span className="text-white">,</span> <span className="text-green-400">"Python"</span><span className="text-orange-400">{']'}</span></span>
+                  <span className="ml-12"><span className="text-red-400">skills</span><span className="text-white">=</span><span className="text-orange-400">{'['}</span><span className="text-green-400">&quot;Golang&quot;</span><span className="text-white">,</span> <span className="text-green-400">&quot;Python&quot;</span><span className="text-white">,</span> <span className="text-green-400">&quot;TypeScript&quot;</span><span className="text-orange-400">{']'}</span></span>
                 </div>
                 <div className="flex">
                   <span className="text-muted-foreground mr-4">6</span>
-                  <span className="ml-12"><span className="text-red-400">experience</span><span className="text-white">=</span><span className="text-green-400">"5+ years"</span></span>
+                  <span className="ml-12"><span className="text-red-400">experience</span><span className="text-white">=</span><span className="text-green-400">&quot;5+ years&quot;</span></span>
                 </div>
                 <div className="flex">
                   <span className="text-muted-foreground mr-4">7</span>
