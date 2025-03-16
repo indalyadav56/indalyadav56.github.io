@@ -6,7 +6,7 @@ import Link from "next/link";
 import { HiDownload, HiArrowRight } from "react-icons/hi";
 import Typed from "typed.js";
 import { Button } from "./ui/button";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Hero() {
   const typedElementRef = useRef<HTMLSpanElement>(null);
@@ -143,6 +143,15 @@ export default function Hero() {
               aria-label="Twitter Profile"
             >
               <FaTwitter size={24} />
+            </a>
+            <a 
+              href="https://instagram.com/indalyadav56" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors transform hover:scale-110 duration-200"
+              aria-label="Instagram Profile"
+            >
+              <FaInstagram size={24} />
             </a>
           </motion.div>
         </motion.div>
