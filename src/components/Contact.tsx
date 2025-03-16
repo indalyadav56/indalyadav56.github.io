@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiMail, FiPhone, FiMapPin, FiSend, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiMail, FiPhone, FiMapPin, FiSend, FiGithub, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -17,6 +18,10 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState("");
+
+  useEffect(() => {
+    emailjs.init("1TbNdmdcw-x13544q");
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -32,42 +37,31 @@ export default function Contact() {
     setSubmitError("");
     
     try {
-      const data = {
-        service_id: 'service_3jl6k77',
-        template_id: 'template_cvnxamh',
-        user_id: '1TbNdmdcw-x13544q',
-        template_params: {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: 'indalkumar56@gmail.com'
-        }
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'indalkumar56@gmail.com'
       };
 
-      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+      await emailjs.send(
+        'service_10utdhd',
+        'template_cvnxamh',
+        templateParams
+      );
+      
+      setSubmitSuccess(true);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       });
-
-      if (response.status === 200) {
-        setSubmitSuccess(true);
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 5000);
-      } else {
-        throw new Error("Failed to send message");
-      }
+      
+      setTimeout(() => {
+        setSubmitSuccess(false);
+      }, 5000);
     } catch (error) {
       console.error("Error sending message:", error);
       setSubmitError("Failed to send message. Please try again later.");
@@ -100,21 +94,27 @@ export default function Contact() {
   const socialLinks = [
     {
       icon: <FiGithub size={20} />,
-      link: "https://github.com/yourusername",
+      link: "https://github.com/indalyadav56",
       label: "GitHub",
       color: "hover:bg-gray-800 hover:text-white",
     },
     {
       icon: <FiLinkedin size={20} />,
-      link: "https://linkedin.com/in/yourusername",
+      link: "https://www.linkedin.com/in/indal-kumar",
       label: "LinkedIn",
       color: "hover:bg-blue-600 hover:text-white",
     },
     {
       icon: <FiTwitter size={20} />,
-      link: "https://twitter.com/yourusername",
+      link: "https://twitter.com/indalyadav56",
       label: "Twitter",
       color: "hover:bg-sky-500 hover:text-white",
+    },
+    { 
+      icon: <FiInstagram size={20} />,
+      link: "https://instagram.com/indalyadav56",
+      label: "Instagram",
+      color: "hover:bg-pink-600 hover:text-white",
     },
   ];
 

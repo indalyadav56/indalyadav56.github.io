@@ -81,26 +81,21 @@ export default function About() {
             </h3>
             
             <p className="text-muted-foreground">
-              I&apos;m Indal Kumar, a passionate software engineer with over 5 years of professional experience in building scalable web applications and services. I specialize in modern JavaScript frameworks, Python, and cloud technologies.
+              I&apos;m Indal Kumar, a passionate software engineer with over 5 years of professional experience in building scalable web applications and services. I specialize in Golang, modern JavaScript frameworks, Python, and cloud technologies.
             </p>
             
             <p className="text-muted-foreground">
-              Throughout my career, I&apos;ve worked on diverse projects ranging from e-commerce platforms to enterprise solutions, focusing on delivering high-quality code that solves real-world problems. I&apos;m dedicated to continuous learning and staying updated with the latest industry trends.
+              Throughout my career, I&apos;ve worked on diverse projects ranging from fintech platforms to enterprise solutions, focusing on delivering high-quality code that solves real-world problems. I&apos;m dedicated to continuous learning and staying updated with the latest industry trends.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-6">
               <div className="glass-effect p-4 rounded-lg border border-primary/20">
-                <h4 className="font-bold mb-2">Education</h4>
-                <p className="text-sm text-muted-foreground">B.Tech in Computer Science</p>
-              </div>
-              
-              <div className="glass-effect p-4 rounded-lg border border-primary/20">
                 <h4 className="font-bold mb-2">Location</h4>
-                <p className="text-sm text-muted-foreground">Bengaluru, India</p>
+                <p className="text-sm text-muted-foreground">Mumbai, India</p>
               </div>
             </div>
             
-            <Button className="group mt-4" variant="outline">
+            <Button className="group mt-4" variant="outline" onClick={() => window.open('/cv.pdf', '_blank')}>
               View Resume
               <HiArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

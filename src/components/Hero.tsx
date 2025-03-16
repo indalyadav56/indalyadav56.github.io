@@ -154,7 +154,6 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
         >
           <div className="relative w-full max-w-md">
-            {/* 3D Code Editor Visualization */}
             <motion.div 
               className="glass-effect border border-primary/20 rounded-xl overflow-hidden shadow-xl"
               initial={{ opacity: 0, y: 20 }}

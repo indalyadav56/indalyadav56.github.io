@@ -10,7 +10,7 @@ export default function Footer() {
   
   const socialLinks = [
     { icon: <FiGithub size={18} />, url: "https://github.com/indalyadav56", label: "GitHub" },
-    { icon: <FiLinkedin size={18} />, url: "https://linkedin.com/in/indalyadav56", label: "LinkedIn" },
+    { icon: <FiLinkedin size={18} />, url: "https://www.linkedin.com/in/indal-kumar", label: "LinkedIn" },
     { icon: <FiTwitter size={18} />, url: "https://twitter.com/indalyadav56", label: "Twitter" },
     { icon: <FiInstagram size={18} />, url: "https://instagram.com/indalyadav56", label: "Instagram" },
   ];
@@ -37,7 +37,7 @@ export default function Footer() {
               className="flex items-center space-x-2"
             >
               <span className="font-bold text-xl text-primary">
-                Indal Yadav
+                Indal Kumar
               </span>
             </motion.div>
             <motion.p 
