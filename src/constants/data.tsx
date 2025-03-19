@@ -209,6 +209,15 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: uuidv4(),
+    title: "Monitoring Service",
+    description: "A monitoring service for tracking and analyzing application performance and logs",
+    img: "https://github.com/indalyadav56/monitoring-service/raw/main/screenshots/image2.png",
+    sourceCode: "https://github.com/indalyadav56/monitoring-service",
+    liveDemo: "https://indalyadav.com",
+    tags: ["Docker Compose", "Prometheus", "Grafana", "Loki", "Promtail"],
+  },
+  {
+    id: uuidv4(),
     title: "Portfolio",
     description: "My personal portfolio website showcasing my projects and skills",
     img: "https://raw.githubusercontent.com/indalyadav56/indalyadav56.github.io/main/screenshots/portfolio.png",
