@@ -95,7 +95,7 @@ export default function About() {
               </div>
             </div>
             
-            <Button className="group mt-4" variant="outline" onClick={() => window.open('/cv.pdf', '_blank')}>
+            <Button className="group mt-4" variant="outline" onClick={() => window.open('/indal-resume.pdf', '_blank')}>
               View Resume
               <HiArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

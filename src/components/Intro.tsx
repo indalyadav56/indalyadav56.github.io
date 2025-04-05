@@ -160,7 +160,7 @@ export default function Intro() {
               </Button>
             </Link>
             
-            <a href="/cv.pdf" download>
+            <a href="/indal-resume.pdf" download>
               <Button variant="outline" className="w-full sm:w-auto border-primary/20 hover:border-primary/40 transition-colors" size="lg">
                 Download CV
                 <HiDownload className="ml-2 group-hover:translate-y-1 transition-transform" />
